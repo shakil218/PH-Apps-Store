@@ -9,8 +9,8 @@ const Navbar = () => {
   const navLinkClass = ({ isActive }) =>
     `relative px-2 py-1 transition duration-300 ${
       isActive
-        ? "text-indigo-600 font-semibold"
-        : "text-gray-600 hover:text-indigo-500"
+        ? "bg-linear-to-br from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent font-semibold"
+        : "text-gray-600 hover:text-[#632EE3]"
     }`;
 
   return (

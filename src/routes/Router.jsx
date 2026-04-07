@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router";
 import MainLayout from "../Layouts/MainLayout";
 import NotFound from "../pages/NotFound";
+import Home from "../pages/home/Home";
 
 const router = createBrowserRouter([
   {
@@ -9,7 +10,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <h1>Welcome to the PH Apps Store</h1>,
+        Component: Home,
       },
       {
         path: "about",
